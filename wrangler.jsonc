@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "aireminder-backend",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-05",
+  "observability": {
+    "enabled": true
+  }
+  // 按需取消注释：KV / D1 / R2 / Queues / Cron 等绑定
+  // "kv_namespaces": [{ "binding": "KV", "id": "<namespace-id>" }],
+  // "d1_databases": [{ "binding": "DB", "database_name": "aireminder", "database_id": "<database-id>" }],
+  // "triggers": { "crons": ["*/5 * * * *"] },
+}
